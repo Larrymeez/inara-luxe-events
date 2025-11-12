@@ -2,3 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-fadeIn {
+  animation: fadeIn 0.3s ease-out;
+}
+
+/* Dropdown gold selection */
+select option:checked {
+  background-color: #d4af37;
+  color: white;
+}
+
+/* Subtle glassy backdrop when modal opens */
+.fixed.inset-0 {
+  backdrop-filter: blur(5px);
+}
