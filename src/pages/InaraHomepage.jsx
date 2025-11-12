@@ -4,22 +4,22 @@ import Footer from "../components/Footer";
 import EventCard from "../components/EventCard";
 import Button from "../components/Button";
 
-// Inara Luxe Events - Homepage (split into components with hover effects and proper styling)
+// Inara Luxe Events - Homepage with client images
 export default function InaraHomepage() {
   const events = [
-    { title: 'Weddings', subtitle: 'Elegant ceremonies & receptions', img: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=60' },
-    { title: 'Proposals', subtitle: 'Intimate and surprising moments', img: 'https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=800&q=60' },
-    { title: 'Corporate', subtitle: 'Conferences, launches & retreats', img: 'https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=800&q=60' },
-    { title: 'Birthdays', subtitle: 'Playful yet refined celebrations', img: 'https://images.unsplash.com/photo-1517816743773-6e0fd518b4a6?auto=format&fit=crop&w=800&q=60' },
-    { title: 'Graduations', subtitle: 'Caps off in style', img: 'https://images.unsplash.com/photo-1527980965255-d3b416303d12?auto=format&fit=crop&w=800&q=60' },
-    { title: 'Custom Events', subtitle: 'Let’s build your signature experience', img: 'https://images.unsplash.com/photo-1505577058444-a3dab4b9d0b6?auto=format&fit=crop&w=800&q=60' },
+    { title: 'Weddings', subtitle: 'Elegant ceremonies & receptions', img: '/assets/inara1.jpg' },
+    { title: 'Proposals', subtitle: 'Intimate and surprising moments', img: '/assets/inara2.jpg' },
+    { title: 'Corporate', subtitle: 'Conferences, launches & retreats', img: '/assets/inara3.jpg' },
+    { title: 'Birthdays', subtitle: 'Playful yet refined celebrations', img: '/assets/inara4.jpg' },
+    { title: 'Graduations', subtitle: 'Caps off in style', img: '/assets/inara5.jpg' },
+    { title: 'Custom Events', subtitle: 'Let’s build your signature experience', img: '/assets/inara6.jpg' },
   ];
 
   const gallery = [
-    'https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=800&q=60',
-    'https://images.unsplash.com/photo-1505576391880-5b43a5b4d1f2?auto=format&fit=crop&w=800&q=60',
-    'https://images.unsplash.com/photo-1524492412937-4961d5f3f1c1?auto=format&fit=crop&w=800&q=60',
-    'https://images.unsplash.com/photo-1533777324565-a040eb52fac2?auto=format&fit=crop&w=800&q=60',
+    '/assets/inara7.jpg',
+    '/assets/inara8.jpg',
+    '/assets/inara9.jpg',
+    '/assets/inara10.jpg',
   ];
 
   const testimonials = [
@@ -35,7 +35,7 @@ export default function InaraHomepage() {
         <div
           className="h-[72vh] md:h-[78vh] bg-cover bg-center flex items-center"
           style={{
-            backgroundImage: "linear-gradient(rgba(7,7,7,0.35), rgba(7,7,7,0.35)), url('https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1770&q=80')",
+            backgroundImage: "linear-gradient(rgba(7,7,7,0.35), rgba(7,7,7,0.35)), url('/assets/inara11.jpg')",
           }}
         >
           <div className="max-w-6xl mx-auto px-6">
